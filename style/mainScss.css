@@ -4,6 +4,53 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'Exo 2', sans-serif; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Exo 2', sans-serif; }
+
+header {
+  background: url("https://www.nationalgeographic.com.es/medio/2018/05/22/plastico4_d7d3a281.jpg") center/cover no-repeat;
+  height: 55vh; }
+  header .main-header .img-logo {
+    display: none; }
+  header .main-header .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; }
+    header .main-header .main-nav .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      header .main-header .main-nav .nav-list .nav-item {
+        margin: 0.5rem; }
+        header .main-header .main-nav .nav-list .nav-item .nav-item__links {
+          text-decoration: none;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          transition: all 0.1s ease-in-out; }
+        header .main-header .main-nav .nav-list .nav-item .nav-item__links:active,
+        header .main-header .main-nav .nav-list .nav-item .nav-item__links:hover {
+          color: #131362; }
+  header .main-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5rem; }
 
 /*# sourceMappingURL=mainScss.css.map */

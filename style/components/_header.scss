@@ -1,0 +1,55 @@
+@import './general';
+
+//  Header Section
+
+header {
+  background: url('https://www.nationalgeographic.com.es/medio/2018/05/22/plastico4_d7d3a281.jpg')
+    center/cover no-repeat;
+  height: 55vh;
+
+  .main-header {
+    .img-logo {
+      display: none;
+    }
+    .main-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      .nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .nav-item {
+          margin: 0.5rem;
+
+          .nav-item__links {
+            text-decoration: none;
+            color: $main-white-color;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            transition: all 0.1s ease-in-out;
+          }
+          .nav-item__links:active,
+          .nav-item__links:hover {
+            color: $main-dark-color;
+          }
+        }
+      }
+    }
+  }
+
+  .main-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5rem;
+  }
+}
