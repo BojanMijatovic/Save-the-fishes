@@ -17,7 +17,7 @@ html {
   font-family: 'Exo 2', sans-serif; }
 
 header {
-  background: url("https://www.nationalgeographic.com.es/medio/2018/05/22/plastico4_d7d3a281.jpg") center/cover no-repeat;
+  background: url("http://grodno.greenbelarus.info/files/field/image/3_600.jpg") center/cover no-repeat;
   height: 55vh; }
   header .main-header .img-logo {
     display: none; }
@@ -50,7 +50,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 5rem; }
+    justify-content: flex-end; }
 
 /*# sourceMappingURL=mainScss.css.map */
