@@ -17,3 +17,11 @@ $main-color: #203ac5;
 $main-dark-color: #131362;
 $main-dark-color1: #12051c;
 $pink-color: #fb6a6a;
+
+//  display flex column
+@mixin displayFlexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

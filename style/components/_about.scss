@@ -1,3 +1,55 @@
 @import './general';
 
 //  about section
+#about {
+  margin-top: 3rem;
+  .about-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: $main-color;
+    font-weight: 700;
+  }
+
+  .about-list {
+    margin-top: 2rem;
+    @include displayFlexColumn;
+    list-style: none;
+
+    //  Media
+    @media (min-width: 30rem) {
+      flex-direction: row;
+    }
+
+    .about-list__item {
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      .list-num {
+        color: $main-color;
+        font-size: 2.5rem;
+        font-weight: 800;
+
+        //  Media
+        @media (min-width: 30rem) {
+          font-size: 2.8rem;
+        }
+        @media (min-width: 50rem) {
+          font-size: 3rem;
+        }
+      }
+      .list-description {
+        font-size: 1.4rem;
+        padding: 1rem;
+        color: $main-dark-color;
+        //  Media
+        @media (min-width: 30rem) {
+          font-size: 1.6rem;
+        }
+        @media (min-width: 50rem) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
