@@ -29,15 +29,16 @@ header {
 
           .nav-item__links {
             text-decoration: none;
-            color: $main-white-color;
+            color: $main-color;
             text-transform: uppercase;
             font-size: 1.4rem;
             letter-spacing: 1px;
+            font-weight: 700;
             transition: all 0.1s ease-in-out;
           }
           .nav-item__links:active,
           .nav-item__links:hover {
-            color: $main-dark-color;
+            color: $main-dark-color1;
           }
         }
       }
@@ -50,6 +51,30 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-   
+    margin-top: 5rem;
+
+    .header-title {
+      color: $main-dark-color;
+      font-weight: 800;
+      font-size: 3rem;
+      margin: 2rem 0;
+      padding: 0.5rem;
+    }
+
+    .main-btn {
+      color: $main-white-color;
+      background: $main-color;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 1rem;
+      transition: all 0.2s ease-in-out;
+    }
+    .main-btn:active,
+    .main-btn:hover {
+      background: $main-white-color;
+      color: $main-color;
+    }
   }
 }

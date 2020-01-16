@@ -37,19 +37,49 @@ header {
         margin: 0.5rem; }
         header .main-header .main-nav .nav-list .nav-item .nav-item__links {
           text-decoration: none;
-          color: #ffffff;
+          color: #203ac5;
           text-transform: uppercase;
           font-size: 1.4rem;
           letter-spacing: 1px;
+          font-weight: 700;
           transition: all 0.1s ease-in-out; }
         header .main-header .main-nav .nav-list .nav-item .nav-item__links:active,
         header .main-header .main-nav .nav-list .nav-item .nav-item__links:hover {
-          color: #131362; }
+          color: #12051c; }
   header .main-title {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    margin-top: 5rem; }
+    header .main-title .header-title {
+      color: #131362;
+      font-weight: 800;
+      font-size: 3rem;
+      margin: 2rem 0;
+      padding: 0.5rem; }
+    header .main-title .main-btn {
+      color: #ffffff;
+      background: #203ac5;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 1rem;
+      transition: all 0.2s ease-in-out; }
+    header .main-title .main-btn:active,
+    header .main-title .main-btn:hover {
+      background: #ffffff;
+      color: #203ac5; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Exo 2', sans-serif; }
 
 /*# sourceMappingURL=mainScss.css.map */
