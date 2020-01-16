@@ -19,20 +19,37 @@ html {
 header {
   background: url("http://grodno.greenbelarus.info/files/field/image/3_600.jpg") center/cover no-repeat;
   height: 55vh; }
+  @media (min-width: 30rem) {
+    header .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
   header .main-header .img-logo {
     display: none; }
+    @media (min-width: 30rem) {
+      header .main-header .img-logo {
+        display: contents; } }
+    header .main-header .img-logo img {
+      padding: 0.5rem;
+      cursor: pointer; }
   header .main-header .main-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem; }
+    @media (min-width: 30rem) {
+      header .main-header .main-nav {
+        margin-right: 2rem; } }
     header .main-header .main-nav .nav-list {
       list-style: none;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      @media (min-width: 30rem) {
+        header .main-header .main-nav .nav-list {
+          flex-direction: row; } }
       header .main-header .main-nav .nav-list .nav-item {
         margin: 0.5rem; }
         header .main-header .main-nav .nav-list .nav-item .nav-item__links {
@@ -51,14 +68,25 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 5rem; }
+    justify-content: flex-end; }
+    @media (min-width: 30rem) {
+      header .main-title {
+        margin-top: 10rem; } }
+    @media (min-width: 50rem) {
+      header .main-title {
+        margin-top: 17rem; } }
     header .main-title .header-title {
       color: #131362;
       font-weight: 800;
       font-size: 3rem;
       margin: 2rem 0;
       padding: 0.5rem; }
+      @media (min-width: 30rem) {
+        header .main-title .header-title {
+          font-size: 4rem; } }
+      @media (min-width: 50rem) {
+        header .main-title .header-title {
+          font-size: 5rem; } }
     header .main-title .main-btn {
       color: #ffffff;
       background: #203ac5;
@@ -67,7 +95,14 @@ header {
       padding: 0.6rem;
       border: none;
       border-radius: 1rem;
-      transition: all 0.2s ease-in-out; }
+      transition: all 0.2s ease-in-out;
+      cursor: pointer; }
+      @media (min-width: 30rem) {
+        header .main-title .main-btn {
+          font-size: 1.8rem; } }
+      @media (min-width: 50rem) {
+        header .main-title .main-btn {
+          font-size: 2.2rem; } }
     header .main-title .main-btn:active,
     header .main-title .main-btn:hover {
       background: #ffffff;
