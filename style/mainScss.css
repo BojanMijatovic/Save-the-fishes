@@ -116,6 +116,9 @@ html {
 
 #about {
   margin-top: 3rem; }
+  @media (min-width: 30rem) {
+    #about {
+      margin-top: 8rem; } }
   #about .about-title {
     text-align: center;
     font-size: 2.2rem;
@@ -155,5 +158,70 @@ html {
         @media (min-width: 50rem) {
           #about .about-list .about-list__item .list-description {
             font-size: 2rem; } }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Exo 2', sans-serif; }
+
+#publication {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 30rem) {
+    #publication {
+      margin-top: 8rem; } }
+  @media (min-width: 30rem) {
+    #publication {
+      flex-direction: row;
+      align-items: center; } }
+  #publication .publication-text {
+    margin: 1rem; }
+    #publication .publication-text .publication-title {
+      text-align: center;
+      color: #203ac5;
+      font-size: 1.6rem;
+      margin-bottom: 1rem; }
+      @media (min-width: 30rem) {
+        #publication .publication-text .publication-title {
+          font-size: 1.8rem; } }
+      @media (min-width: 50rem) {
+        #publication .publication-text .publication-title {
+          font-size: 2rem; } }
+    #publication .publication-text .publication-description {
+      font-size: 1.4rem;
+      padding: 0.5rem; }
+      @media (min-width: 30rem) {
+        #publication .publication-text .publication-description {
+          font-size: 1.6rem; } }
+      @media (min-width: 50rem) {
+        #publication .publication-text .publication-description {
+          font-size: 1.8rem; } }
+    #publication .publication-text .publication-link {
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: #fb6a6a;
+      margin: 0.5rem;
+      transition: all 0.2s ease-in-out; }
+    #publication .publication-text .publication-link:active,
+    #publication .publication-text .publication-link:hover {
+      color: #131362;
+      border-bottom: #131362 solid 2px; }
+  #publication img {
+    height: 30vh;
+    width: 100vw; }
+    @media (min-width: 30rem) {
+      #publication img {
+        height: 30vh;
+        width: 90vw; } }
+    @media (min-width: 50rem) {
+      #publication img {
+        width: 80vw; } }
 
 /*# sourceMappingURL=mainScss.css.map */
